@@ -4,7 +4,7 @@
 #include	<string>
 #include	"Zia.hpp"
 
-/** \brief Class representing the connexion of a client */
+/** \brief Interface representing the connexion of a client */
 
 class		IConnection
 {

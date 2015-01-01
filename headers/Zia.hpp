@@ -13,4 +13,6 @@ struct
   char		port[5];
 }		s_ip;
 
+enum priority {VERY_LOW, LOW, MODERATE, HIGH, VERY_HIGH, CRITICAL};
+
 #endif		//ZIA_HPP

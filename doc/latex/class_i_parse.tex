@@ -2,7 +2,7 @@
 \label{class_i_parse}\index{I\+Parse@{I\+Parse}}
 
 
-Class for parsing the client\textquotesingle{}s request.  
+Interface for parsing the client\textquotesingle{}s request.  
 
 
 
@@ -14,11 +14,26 @@ Class for parsing the client\textquotesingle{}s request.
 \item 
 \hypertarget{class_i_parse_a72f8e36290a53f75e6922e43ea7baacc}{}virtual \hyperlink{class_i_parse_a72f8e36290a53f75e6922e43ea7baacc}{$\sim$\+I\+Parse} ()\label{class_i_parse_a72f8e36290a53f75e6922e43ea7baacc}
 
-\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_i_parse_ab622eab138c2535f21c5b04f80f6c327}{}virtual std\+::string const \& \hyperlink{class_i_parse_ab622eab138c2535f21c5b04f80f6c327}{get\+U\+R\+L} ()=0\label{class_i_parse_ab622eab138c2535f21c5b04f80f6c327}
+
+\begin{DoxyCompactList}\small\item\em Returns the U\+R\+L required by the client. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_parse_aac1e9d916cbb5097599ad3743d80d96c}{set\+U\+R\+L} (std\+::string \&)=0
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Class for parsing the client\textquotesingle{}s request. 
+Interface for parsing the client\textquotesingle{}s request. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_i_parse_aac1e9d916cbb5097599ad3743d80d96c}{}\index{I\+Parse@{I\+Parse}!set\+U\+R\+L@{set\+U\+R\+L}}
+\index{set\+U\+R\+L@{set\+U\+R\+L}!I\+Parse@{I\+Parse}}
+\subsubsection[{set\+U\+R\+L}]{\setlength{\rightskip}{0pt plus 5cm}virtual void I\+Parse\+::set\+U\+R\+L (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_i_parse_aac1e9d916cbb5097599ad3743d80d96c}
+Set the client U\+R\+L 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
