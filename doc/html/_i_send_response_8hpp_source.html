@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9"/>
-<title>Zia: ISendResponse.hpp Source File</title>
+<title>APIBoule: ISendResponse.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Zia
+   <div id="projectname">APIBoule
    </div>
   </td>
  </tr>
@@ -105,26 +105,34 @@ $(document).ready(function(){initNavTree('_i_send_response_8hpp_source.html','')
 <div class="title">ISendResponse.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ISENDRESPONSE_HPP</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"># define ISNDRESPONSE_HPP</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef     ISENDRESPONSE_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"># define    ISENDRESPONSE_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_i_send_response.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i_send_response.html">ISendResponse</a></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include    &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_i_send_response.html">    6</a></span>&#160;<span class="keyword">class       </span><a class="code" href="class_i_send_response.html">ISendResponse</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_i_send_response.html#ac9d4776579b47bf2a992576d49400d8f">   10</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_i_send_response.html#ac9d4776579b47bf2a992576d49400d8f">~ISendReponse</a>(){}</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_i_send_response.html#a86f091f4381129c776fe99e28e7fadb1">   10</a></span>&#160;  <span class="keyword">virtual</span>   <a class="code" href="class_i_send_response.html#a86f091f4381129c776fe99e28e7fadb1">~ISendResponse</a>(){}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">virtual</span>       <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="class_i_send_response.html#a57e4f79a4cb5d4ad3bf59072e24a7db0">getCode</a>() = 0;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">virtual</span>       <span class="keywordtype">void</span> <a class="code" href="class_i_send_response.html#aa8e8e3c922293eedaef971ad919c160f">setCode</a>(<span class="keywordtype">short</span> <span class="keywordtype">int</span>) = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">virtual</span>       std::string <a class="code" href="class_i_send_response.html#a9677c3a98475cab333b87f1c4a5bff75">getStatus</a>() = 0;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">virtual</span>       std::string <a class="code" href="class_i_send_response.html#add6ea9f2cd5a8b004ea08dd4954119e7">setStatus</a>() = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_i_send_response_html_aa8e8e3c922293eedaef971ad919c160f"><div class="ttname"><a href="class_i_send_response.html#aa8e8e3c922293eedaef971ad919c160f">ISendResponse::setCode</a></div><div class="ttdeci">virtual void setCode(short int)=0</div><div class="ttdoc">sets the http response code </div></div>
+<div class="ttc" id="class_i_send_response_html_a86f091f4381129c776fe99e28e7fadb1"><div class="ttname"><a href="class_i_send_response.html#a86f091f4381129c776fe99e28e7fadb1">ISendResponse::~ISendResponse</a></div><div class="ttdeci">virtual ~ISendResponse()</div><div class="ttdoc">Virtual destructor. </div><div class="ttdef"><b>Definition:</b> ISendResponse.hpp:10</div></div>
 <div class="ttc" id="class_i_send_response_html"><div class="ttname"><a href="class_i_send_response.html">ISendResponse</a></div><div class="ttdoc">Interface sending the reponse request to the client. </div><div class="ttdef"><b>Definition:</b> ISendResponse.hpp:6</div></div>
-<div class="ttc" id="class_i_send_response_html_ac9d4776579b47bf2a992576d49400d8f"><div class="ttname"><a href="class_i_send_response.html#ac9d4776579b47bf2a992576d49400d8f">ISendResponse::~ISendReponse</a></div><div class="ttdeci">virtual ~ISendReponse()</div><div class="ttdoc">Virtual destructor. </div><div class="ttdef"><b>Definition:</b> ISendResponse.hpp:10</div></div>
+<div class="ttc" id="class_i_send_response_html_add6ea9f2cd5a8b004ea08dd4954119e7"><div class="ttname"><a href="class_i_send_response.html#add6ea9f2cd5a8b004ea08dd4954119e7">ISendResponse::setStatus</a></div><div class="ttdeci">virtual std::string setStatus()=0</div><div class="ttdoc">sets the http response status message </div></div>
+<div class="ttc" id="class_i_send_response_html_a57e4f79a4cb5d4ad3bf59072e24a7db0"><div class="ttname"><a href="class_i_send_response.html#a57e4f79a4cb5d4ad3bf59072e24a7db0">ISendResponse::getCode</a></div><div class="ttdeci">virtual short int getCode()=0</div><div class="ttdoc">returns the http response code </div></div>
+<div class="ttc" id="class_i_send_response_html_a9677c3a98475cab333b87f1c4a5bff75"><div class="ttname"><a href="class_i_send_response.html#a9677c3a98475cab333b87f1c4a5bff75">ISendResponse::getStatus</a></div><div class="ttdeci">virtual std::string getStatus()=0</div><div class="ttdoc">returns the http response status message </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ISendResponse.hpp</b></li>
-    <li class="footer">Generated on Wed Dec 31 2014 22:00:17 for Zia by
+    <li class="footer">Generated on Mon Jan 5 2015 15:57:10 for APIBoule by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>

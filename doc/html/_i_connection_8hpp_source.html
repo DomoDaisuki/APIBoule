@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9"/>
-<title>Zia: IConnection.hpp Source File</title>
+<title>APIBoule: IConnection.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Zia
+   <div id="projectname">APIBoule
    </div>
   </td>
  </tr>
@@ -111,36 +111,36 @@ $(document).ready(function(){initNavTree('_i_connection_8hpp_source.html','');})
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include    &lt;string&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include    &quot;Zia.hpp&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_i_connection.html">    9</a></span>&#160;<span class="keyword">class       </span><a class="code" href="class_i_connection.html">IConnection</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_i_connection.html#a726589aeeff7948dea5a87c263e867dd">   13</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_i_connection.html#a726589aeeff7948dea5a87c263e867dd">~IConnection</a>(){};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">virtual</span> std::string <span class="keyword">const</span> &amp; <a class="code" href="class_i_connection.html#a8812ae35dc3bada3bd961edb045c590b">getIPAdress</a>() = 0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">virtual</span> std::string <span class="keyword">const</span> &amp;<a class="code" href="class_i_connection.html#ab87c32c04e1bbf322ab25bd7f752afcb">getHostID</a>() = 0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">virtual</span> std::string <span class="keyword">const</span> &amp;<a class="code" href="class_i_connection.html#a884aa2cf39ab4e58f5cdf79cb5eed99d">getNetID</a>() = 0;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">virtual</span> std::string <span class="keyword">const</span> &amp;<a class="code" href="class_i_connection.html#a7e1faa59d9ae7c6bc53bb491e5afd7e2">getPort</a>() = 0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">virtual</span> SOCKET <span class="keyword">const</span> &amp;<a class="code" href="class_i_connection.html#a09349b5ba8ce8e381cf34ab12ba40c9c">getSocket</a>() = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">virtual</span> std::string <span class="keyword">const</span> &amp;<a class="code" href="class_i_connection.html#a78d5be69e5e26c7645b04a1903b1557d">getRequest</a>() = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_connection.html#a7efb00e9c99e0eac30f5005aca9ed571">setSocket</a>(SOCKET) = 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif      //CONNECTION_HPP</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_i_connection.html">    8</a></span>&#160;<span class="keyword">class       </span><a class="code" href="class_i_connection.html">IConnection</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_i_connection.html#a726589aeeff7948dea5a87c263e867dd">   12</a></span>&#160;  <span class="keyword">virtual</span>   <a class="code" href="class_i_connection.html#a726589aeeff7948dea5a87c263e867dd">~IConnection</a>(){}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">virtual</span>   std::string <span class="keyword">const</span> &amp; <a class="code" href="class_i_connection.html#a8812ae35dc3bada3bd961edb045c590b">getIPAdress</a>() = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">virtual</span>   std::string <span class="keyword">const</span> &amp;<a class="code" href="class_i_connection.html#ab87c32c04e1bbf322ab25bd7f752afcb">getHostID</a>() = 0;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">virtual</span>   std::string <span class="keyword">const</span> &amp;<a class="code" href="class_i_connection.html#a884aa2cf39ab4e58f5cdf79cb5eed99d">getNetID</a>() = 0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">virtual</span>   <span class="keywordtype">short</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keyword">const</span> &amp;<a class="code" href="class_i_connection.html#af6f529a8eea2e30017ba2ec9f43f214b">getPort</a>() = 0;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">virtual</span>   SOCKET <span class="keyword">const</span> &amp;<a class="code" href="class_i_connection.html#a09349b5ba8ce8e381cf34ab12ba40c9c">getSocket</a>() = 0;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span>   std::string <span class="keyword">const</span> &amp;<a class="code" href="class_i_connection.html#a78d5be69e5e26c7645b04a1903b1557d">getRequest</a>() = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span>   <span class="keywordtype">void</span> <a class="code" href="class_i_connection.html#a7efb00e9c99e0eac30f5005aca9ed571">setSocket</a>(SOCKET) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif      //CONNECTION_HPP</span></div>
 <div class="ttc" id="class_i_connection_html_a884aa2cf39ab4e58f5cdf79cb5eed99d"><div class="ttname"><a href="class_i_connection.html#a884aa2cf39ab4e58f5cdf79cb5eed99d">IConnection::getNetID</a></div><div class="ttdeci">virtual std::string const &amp; getNetID()=0</div><div class="ttdoc">Returns the client net ID. </div></div>
 <div class="ttc" id="class_i_connection_html_a8812ae35dc3bada3bd961edb045c590b"><div class="ttname"><a href="class_i_connection.html#a8812ae35dc3bada3bd961edb045c590b">IConnection::getIPAdress</a></div><div class="ttdeci">virtual std::string const &amp; getIPAdress()=0</div><div class="ttdoc">Returns the client&#39;s IP Adress. </div></div>
 <div class="ttc" id="class_i_connection_html_a78d5be69e5e26c7645b04a1903b1557d"><div class="ttname"><a href="class_i_connection.html#a78d5be69e5e26c7645b04a1903b1557d">IConnection::getRequest</a></div><div class="ttdeci">virtual std::string const &amp; getRequest()=0</div><div class="ttdoc">Returns the client&#39;s request. </div></div>
 <div class="ttc" id="class_i_connection_html_a09349b5ba8ce8e381cf34ab12ba40c9c"><div class="ttname"><a href="class_i_connection.html#a09349b5ba8ce8e381cf34ab12ba40c9c">IConnection::getSocket</a></div><div class="ttdeci">virtual SOCKET const &amp; getSocket()=0</div><div class="ttdoc">Returns the connection socket. </div></div>
-<div class="ttc" id="class_i_connection_html_a726589aeeff7948dea5a87c263e867dd"><div class="ttname"><a href="class_i_connection.html#a726589aeeff7948dea5a87c263e867dd">IConnection::~IConnection</a></div><div class="ttdeci">virtual ~IConnection()</div><div class="ttdoc">Virtual Destructor. </div><div class="ttdef"><b>Definition:</b> IConnection.hpp:13</div></div>
-<div class="ttc" id="class_i_connection_html"><div class="ttname"><a href="class_i_connection.html">IConnection</a></div><div class="ttdoc">Interface representing the connexion of a client. </div><div class="ttdef"><b>Definition:</b> IConnection.hpp:9</div></div>
-<div class="ttc" id="class_i_connection_html_a7e1faa59d9ae7c6bc53bb491e5afd7e2"><div class="ttname"><a href="class_i_connection.html#a7e1faa59d9ae7c6bc53bb491e5afd7e2">IConnection::getPort</a></div><div class="ttdeci">virtual std::string const &amp; getPort()=0</div><div class="ttdoc">Returns the client port. </div></div>
+<div class="ttc" id="class_i_connection_html_a726589aeeff7948dea5a87c263e867dd"><div class="ttname"><a href="class_i_connection.html#a726589aeeff7948dea5a87c263e867dd">IConnection::~IConnection</a></div><div class="ttdeci">virtual ~IConnection()</div><div class="ttdoc">Virtual Destructor. </div><div class="ttdef"><b>Definition:</b> IConnection.hpp:12</div></div>
+<div class="ttc" id="class_i_connection_html"><div class="ttname"><a href="class_i_connection.html">IConnection</a></div><div class="ttdoc">Interface representing the connexion of a client. </div><div class="ttdef"><b>Definition:</b> IConnection.hpp:8</div></div>
 <div class="ttc" id="class_i_connection_html_ab87c32c04e1bbf322ab25bd7f752afcb"><div class="ttname"><a href="class_i_connection.html#ab87c32c04e1bbf322ab25bd7f752afcb">IConnection::getHostID</a></div><div class="ttdeci">virtual std::string const &amp; getHostID()=0</div><div class="ttdoc">Returns the client&#39;s host ID. </div></div>
 <div class="ttc" id="class_i_connection_html_a7efb00e9c99e0eac30f5005aca9ed571"><div class="ttname"><a href="class_i_connection.html#a7efb00e9c99e0eac30f5005aca9ed571">IConnection::setSocket</a></div><div class="ttdeci">virtual void setSocket(SOCKET)=0</div><div class="ttdoc">Set the client&#39;s socket. </div></div>
+<div class="ttc" id="class_i_connection_html_af6f529a8eea2e30017ba2ec9f43f214b"><div class="ttname"><a href="class_i_connection.html#af6f529a8eea2e30017ba2ec9f43f214b">IConnection::getPort</a></div><div class="ttdeci">virtual short unsigned int const &amp; getPort()=0</div><div class="ttdoc">Returns the client port. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>IConnection.hpp</b></li>
-    <li class="footer">Generated on Wed Dec 31 2014 22:00:17 for Zia by
+    <li class="footer">Generated on Mon Jan 5 2015 15:57:10 for APIBoule by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9"/>
-<title>Zia: IGenResponse Class Reference</title>
+<title>APIBoule: IGenResponse Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Zia
+   <div id="projectname">APIBoule
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('class_i_gen_response.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_i_gen_response-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IGenResponse Class Reference</div>  </div>
+<div class="title">IGenResponse Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -122,6 +122,22 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_gen_response.html#a7bba543b82c41a64ff9171893507a1ff">~IGenResponse</a> ()</td></tr>
 <tr class="memdesc:a7bba543b82c41a64ff9171893507a1ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
 <tr class="separator:a7bba543b82c41a64ff9171893507a1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a827a1ccea6a15a30ac8657c81a1ed148"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a827a1ccea6a15a30ac8657c81a1ed148"></a>
+virtual short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_gen_response.html#a827a1ccea6a15a30ac8657c81a1ed148">getCode</a> ()=0</td></tr>
+<tr class="memdesc:a827a1ccea6a15a30ac8657c81a1ed148"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the http response code <br /></td></tr>
+<tr class="separator:a827a1ccea6a15a30ac8657c81a1ed148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b8581251abed0aa2672ccc80bdaa6d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b8581251abed0aa2672ccc80bdaa6d0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_gen_response.html#a5b8581251abed0aa2672ccc80bdaa6d0">setCode</a> (short int)=0</td></tr>
+<tr class="memdesc:a5b8581251abed0aa2672ccc80bdaa6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the http response code <br /></td></tr>
+<tr class="separator:a5b8581251abed0aa2672ccc80bdaa6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abda4b1bd089fbeaa89f948bee724fc18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abda4b1bd089fbeaa89f948bee724fc18"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_gen_response.html#abda4b1bd089fbeaa89f948bee724fc18">getStatus</a> ()=0</td></tr>
+<tr class="memdesc:abda4b1bd089fbeaa89f948bee724fc18"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the http response status message <br /></td></tr>
+<tr class="separator:abda4b1bd089fbeaa89f948bee724fc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c19372e819c4e386ac066eaa172988b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c19372e819c4e386ac066eaa172988b"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_gen_response.html#a8c19372e819c4e386ac066eaa172988b">setStatus</a> ()=0</td></tr>
+<tr class="memdesc:a8c19372e819c4e386ac066eaa172988b"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the http response status message <br /></td></tr>
+<tr class="separator:a8c19372e819c4e386ac066eaa172988b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface generating the client's response. </p>
@@ -134,7 +150,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_i_gen_response.html">IGenResponse</a></li>
-    <li class="footer">Generated on Wed Dec 31 2014 22:00:17 for Zia by
+    <li class="footer">Generated on Mon Jan 5 2015 15:57:10 for APIBoule by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>

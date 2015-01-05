@@ -12,9 +12,21 @@ Interface sending the reponse request to the client.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_i_send_response_ac9d4776579b47bf2a992576d49400d8f}{}virtual \hyperlink{class_i_send_response_ac9d4776579b47bf2a992576d49400d8f}{$\sim$\+I\+Send\+Reponse} ()\label{class_i_send_response_ac9d4776579b47bf2a992576d49400d8f}
+\hypertarget{class_i_send_response_a86f091f4381129c776fe99e28e7fadb1}{}virtual \hyperlink{class_i_send_response_a86f091f4381129c776fe99e28e7fadb1}{$\sim$\+I\+Send\+Response} ()\label{class_i_send_response_a86f091f4381129c776fe99e28e7fadb1}
 
-\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_i_send_response_a57e4f79a4cb5d4ad3bf59072e24a7db0}{}virtual short int \hyperlink{class_i_send_response_a57e4f79a4cb5d4ad3bf59072e24a7db0}{get\+Code} ()=0\label{class_i_send_response_a57e4f79a4cb5d4ad3bf59072e24a7db0}
+
+\begin{DoxyCompactList}\small\item\em returns the http response code \end{DoxyCompactList}\item 
+\hypertarget{class_i_send_response_aa8e8e3c922293eedaef971ad919c160f}{}virtual void \hyperlink{class_i_send_response_aa8e8e3c922293eedaef971ad919c160f}{set\+Code} (short int)=0\label{class_i_send_response_aa8e8e3c922293eedaef971ad919c160f}
+
+\begin{DoxyCompactList}\small\item\em sets the http response code \end{DoxyCompactList}\item 
+\hypertarget{class_i_send_response_a9677c3a98475cab333b87f1c4a5bff75}{}virtual std\+::string \hyperlink{class_i_send_response_a9677c3a98475cab333b87f1c4a5bff75}{get\+Status} ()=0\label{class_i_send_response_a9677c3a98475cab333b87f1c4a5bff75}
+
+\begin{DoxyCompactList}\small\item\em returns the http response status message \end{DoxyCompactList}\item 
+\hypertarget{class_i_send_response_add6ea9f2cd5a8b004ea08dd4954119e7}{}virtual std\+::string \hyperlink{class_i_send_response_add6ea9f2cd5a8b004ea08dd4954119e7}{set\+Status} ()=0\label{class_i_send_response_add6ea9f2cd5a8b004ea08dd4954119e7}
+
+\begin{DoxyCompactList}\small\item\em sets the http response status message \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}

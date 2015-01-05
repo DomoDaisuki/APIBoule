@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9"/>
-<title>Zia: IGenResponse.hpp Source File</title>
+<title>APIBoule: IGenResponse.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Zia
+   <div id="projectname">APIBoule
    </div>
   </td>
  </tr>
@@ -108,22 +108,31 @@ $(document).ready(function(){initNavTree('_i_gen_response_8hpp_source.html','');
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef     IGENRESPONSE_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"># define    IGENRESPONSE_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_i_gen_response.html">    5</a></span>&#160;<span class="keyword">class       </span><a class="code" href="class_i_gen_response.html">IGenResponse</a></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_i_gen_response.html#a7bba543b82c41a64ff9171893507a1ff">    9</a></span>&#160;  <span class="keyword">virtual</span>   <a class="code" href="class_i_gen_response.html#a7bba543b82c41a64ff9171893507a1ff">~IGenResponse</a>(){}</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;};</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_i_gen_response_html_a7bba543b82c41a64ff9171893507a1ff"><div class="ttname"><a href="class_i_gen_response.html#a7bba543b82c41a64ff9171893507a1ff">IGenResponse::~IGenResponse</a></div><div class="ttdeci">virtual ~IGenResponse()</div><div class="ttdoc">Virtual destructor. </div><div class="ttdef"><b>Definition:</b> IGenResponse.hpp:9</div></div>
-<div class="ttc" id="class_i_gen_response_html"><div class="ttname"><a href="class_i_gen_response.html">IGenResponse</a></div><div class="ttdoc">Interface generating the client&#39;s response. </div><div class="ttdef"><b>Definition:</b> IGenResponse.hpp:5</div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include    &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_i_gen_response.html">    6</a></span>&#160;<span class="keyword">class       </span><a class="code" href="class_i_gen_response.html">IGenResponse</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_i_gen_response.html#a7bba543b82c41a64ff9171893507a1ff">   10</a></span>&#160;  <span class="keyword">virtual</span>   <a class="code" href="class_i_gen_response.html#a7bba543b82c41a64ff9171893507a1ff">~IGenResponse</a>(){}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">virtual</span>   <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="class_i_gen_response.html#a827a1ccea6a15a30ac8657c81a1ed148">getCode</a>() = 0;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">virtual</span>   <span class="keywordtype">void</span> <a class="code" href="class_i_gen_response.html#a5b8581251abed0aa2672ccc80bdaa6d0">setCode</a>(<span class="keywordtype">short</span> <span class="keywordtype">int</span>) = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">virtual</span>   std::string <a class="code" href="class_i_gen_response.html#abda4b1bd089fbeaa89f948bee724fc18">getStatus</a>() = 0;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">virtual</span>   std::string <a class="code" href="class_i_gen_response.html#a8c19372e819c4e386ac066eaa172988b">setStatus</a>() = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_i_gen_response_html_a827a1ccea6a15a30ac8657c81a1ed148"><div class="ttname"><a href="class_i_gen_response.html#a827a1ccea6a15a30ac8657c81a1ed148">IGenResponse::getCode</a></div><div class="ttdeci">virtual short int getCode()=0</div><div class="ttdoc">returns the http response code </div></div>
+<div class="ttc" id="class_i_gen_response_html_a7bba543b82c41a64ff9171893507a1ff"><div class="ttname"><a href="class_i_gen_response.html#a7bba543b82c41a64ff9171893507a1ff">IGenResponse::~IGenResponse</a></div><div class="ttdeci">virtual ~IGenResponse()</div><div class="ttdoc">Virtual destructor. </div><div class="ttdef"><b>Definition:</b> IGenResponse.hpp:10</div></div>
+<div class="ttc" id="class_i_gen_response_html"><div class="ttname"><a href="class_i_gen_response.html">IGenResponse</a></div><div class="ttdoc">Interface generating the client&#39;s response. </div><div class="ttdef"><b>Definition:</b> IGenResponse.hpp:6</div></div>
+<div class="ttc" id="class_i_gen_response_html_a8c19372e819c4e386ac066eaa172988b"><div class="ttname"><a href="class_i_gen_response.html#a8c19372e819c4e386ac066eaa172988b">IGenResponse::setStatus</a></div><div class="ttdeci">virtual std::string setStatus()=0</div><div class="ttdoc">sets the http response status message </div></div>
+<div class="ttc" id="class_i_gen_response_html_abda4b1bd089fbeaa89f948bee724fc18"><div class="ttname"><a href="class_i_gen_response.html#abda4b1bd089fbeaa89f948bee724fc18">IGenResponse::getStatus</a></div><div class="ttdeci">virtual std::string getStatus()=0</div><div class="ttdoc">returns the http response status message </div></div>
+<div class="ttc" id="class_i_gen_response_html_a5b8581251abed0aa2672ccc80bdaa6d0"><div class="ttname"><a href="class_i_gen_response.html#a5b8581251abed0aa2672ccc80bdaa6d0">IGenResponse::setCode</a></div><div class="ttdeci">virtual void setCode(short int)=0</div><div class="ttdoc">sets the http response code </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>IGenResponse.hpp</b></li>
-    <li class="footer">Generated on Wed Dec 31 2014 22:00:17 for Zia by
+    <li class="footer">Generated on Mon Jan 5 2015 15:57:10 for APIBoule by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>
