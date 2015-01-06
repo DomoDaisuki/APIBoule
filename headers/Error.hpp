@@ -5,7 +5,7 @@
 # include	<exception>
 
 /** \brief Class managing potential errors */
-class		Error : std::exception
+class		Error : public std::exception
 {
   public:
   short		code;
