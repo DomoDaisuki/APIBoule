@@ -1,18 +1,18 @@
-#ifndef		IPREPARSE_HPP
-# define	IPREPARSE_HPP
+#ifndef		IPARSE_HPP
+# define	IPARSE_HPP
 
 # include	<string>
 
 /** \brief Interface for parsing the client's request   */
-class		IPreParse
+class		IParse
 {
   public:
   /** \brief Virtual destructor */
-  virtual	~IPreParse(){}
+  virtual	~IParse(){}
   /** \brief Returns the URL required by the client*/
   virtual const std::string &getURL() const = 0;
   /** Set the client URL  */
   virtual void	setURL(std::string &) = 0;
 };
 
-#endif		//IPREPARSE_HPP
+#endif		//IPARSE_HPP
