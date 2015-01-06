@@ -12,17 +12,17 @@ class IModule
   /** \brief Hook after connecting */
   virtual const Error &PostConnexion(IConnexion *){}
   /** \brief Hook before parsing request */
-  virtual const Error &PreParse(I *){}
+  virtual const Error &PreParse(IRequest *){}
   /** \brief Hook after parsing request */
-  virtual const Error &PostParse(IConnexion *){}
+  virtual const Error &PostParse(IRequest *){}
   /** \brief Hook before getting content */
-  virtual const Error &preGetContent(){}
-  /** \brief Hook after getting content */
-  virtual const Error &postGetContent(){}
+  virtual const Error &preGetContent(IRequest *){}
+  /** \brief Hook before getting content */
+  virtual const Error &preGenerate(IResponse *){}
+  /** \brief Hook after generating content */
+  virtual const Error &postGenerate(IResponse *){}
   /** \brief Hook before sending request */
-  virtual const Error &PreSend(IConnexion *){}
-  /** \brief Hook after sending request */
-  virtual const Error &PostSend(IConnexion *){}
+  virtual const Error &PreSend(IResponse *){}
 };
 
 #endif		//IMODULE_HPP
